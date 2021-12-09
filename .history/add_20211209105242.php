@@ -1,7 +1,7 @@
 <?php
 
   //Connexion à la base de données
-  $bdd = mysqli_connect('localhost', 'root', 'root', 'forum');
+  $bdd = mysqli_connect('localhost', 'root', 'root', 'xss');
 
   //Récuperation des paramètres
   $numerosujet = $_POST['numerosujet'];

@@ -26,7 +26,7 @@
 
 <?php
     //Connexion à la base de données
-    $bdd = mysqli_connect('localhost', 'root', 'root', 'forum');
+    $bdd = mysqli_connect('localhost', 'root', 'root', 'xss');
 
     // Si l'utilisateur s'est connecté
     if (isset($_POST['identifiant'])) {

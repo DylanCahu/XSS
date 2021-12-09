@@ -1,12 +1,12 @@
 <?php
 
   //Connexion à la base de données
-  $bdd = mysqli_connect('localhost', 'root', 'root', 'forum');
+  $bdd = mysqli_connect('localhost', 'root', 'root', 'xss');
 
   //Récuperation des paramètres
-  $numerosujet = $_GET['numerosujet'];
-  $redacteur = $_GET['redacteur'];
-  $message = $_GET['message'];
+  $numerosujet = $_POST['numerosujet'];
+  $redacteur = $_POST['redacteur'];
+  $message = $_POST['message'];
 
   //Génération de la requête
   $requeteSQL = "INSERT INTO messages 
